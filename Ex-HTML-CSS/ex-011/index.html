@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pictures</title>
+</head>
+<body>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexivel">
+    </picture>
+    <h1>Agora vamo por audios</h1>
+    <audio preload="metadata" controls autoplay>
+        <source src="media/bandolera.mp3" type="audio/mpeg">
+        <source src="media/bandolera.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não é compativel com nenhum tipo de audio <a href="media/bandolera.mp3">clique aqui para fazer o download</a></p>
+    </audio>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATV 05</title>
+    <style>
+        div#area{
+            font: normal 20pt arial;
+            background-color: aqua;
+            color: rgb(19, 18, 17);
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        interaja...
+    </div>
+    <script>
+        var a= document.getElementById(`area`)
+        a.addEventListener('click',clicar)
+        a.addEventListener('mouseover', entrar)
+        a.addEventListener('mouseout', saiu)
+
+        function clicar() {
+             a.innerText= `Cliclou`
+             a.style.background= 'green'
+        }
+        function entrar() {
+            a.innerText= 'entrou'
+
+        }
+        function saiu() {
+            a.innerText= 'Saiu pq?'
+            a.style.background= 'aqua'
+            
+        }
+    </script>
+</body>
+</html>
